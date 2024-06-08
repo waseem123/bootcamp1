@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            font-size: 48px;
+        }
+
+        p::first-line{
+            color: chartreuse;
+        }
+
+        p::after{
+            content :  url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQKrFhY-ljA-u7J5IMWeTv8zmpBx4PP9nQMw&s');
+        }
+
+        ::marker{
+            color: rgb(219, 56, 86);
+        }
+
+        ::selection{
+            background-color: hotpink;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        selector::pseudo_selector{
+            value 1 : property1,
+            value 2 : property2,
+            ...
+            value N : propertyN
+        }    
+    </pre>
+    <p> 
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe sunt nemo architecto aliquid nisi sit vitae natus earum quibusdam provident reiciendis ex adipisci maxime molestiae, illum animi inventore dolores ipsam.
+    </p>
+
+    <hr>
+
+    <p>
+        welcome to CSS Bootcamp
+    </p>
+
+    <ul>
+        <li>Solapur</li>
+        <li>Mumbai</li>
+        <li>Pune</li>
+        <li>Sangli</li>
+        <li>Satara</li>
+        <li>Nasik</li>
+        <li>Osmanabad</li>
+        <li>Raigad</li>
+        <li>Gadchiroli</li>
+    </ul>
+</body>
+</html>

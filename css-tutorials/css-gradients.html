@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 350px;
+            height: 350px;
+            border: 1px solid black;
+            margin: 20px;
+        }
+
+        /* @keyframes myanimation {
+            from{
+                background-image: repeating-linear-gradient(to bottom left,rgb(122, 206, 122) 20%,rgb(3, 3, 144) 30%);
+            }to{
+                background-image: repeating-linear-gradient(to bottom right,rgb(122, 206, 122) 30%,rgb(3, 3, 144) 60%);
+            }
+        } */
+        #d1{
+            background-image: repeating-linear-gradient(to bottom left,rgb(122, 206, 122) 20%,rgb(3, 3, 144) 30%);
+            animation-name: myanimation;
+            animation-duration: 5s;
+        }
+
+        #d2{
+            background-image: repeating-radial-gradient(red 10%,green 20%,blue 30%);
+        }
+        #d3{
+            border-radius: 50%;
+            background-image: conic-gradient(chartreuse 90deg,hotpink 90deg,hotpink 135deg,red 135deg,red 180deg,purple 180deg,purple 360deg);
+        }
+    </style>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+</body>
+</html>

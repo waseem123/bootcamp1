@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            font-size: 96px;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 16px 16px 16px red,4px 4px 16px red,2px 2px 16px red;
+        }
+
+        div{
+            margin-bottom: 24px;
+            padding: 8px;
+            width: 25%;
+            border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 4px 4px 8px red,2px 2px 16px rgb(58, 158, 83),8px 8px 8px rgb(124, 62, 190);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        #boximage   {
+            margin-top: 24px;
+            margin-bottom: 24px;
+            width: 25%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 4px 4px 8px red,2px 2px 16px rgb(58, 158, 83),8px 8px 8px rgb(124, 62, 190);
+        }
+
+        #myimage{
+            width: 25%;
+            filter: drop-shadow(16px 16px 8px rgba(0, 0, 0, 0.394));
+            
+        }
+        #myimage:hover{
+            transform: rotateY(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>TEXT SHADOW</h1>
+    <hr>
+    <div>
+        <h2>Box Shadow</h2>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, sapiente! Cupiditate voluptates dolorum sunt, iusto illo necessitatibus ipsam soluta quasi?
+        </p>
+    </div>
+    <hr>
+    <img id="boximage" src="https://cdn.pixabay.com/photo/2023/04/30/04/29/anime-7959691_960_720.jpg" alt="">
+    <hr>
+    <img id="myimage" src="nobita.png" alt="">
+</body>
+</html>

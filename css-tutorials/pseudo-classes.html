@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: rgb(54, 49, 49);
+            padding: 16px;
+        }
+
+        a:link{
+            color:green;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        a:visited{
+            color: brown;
+        }
+        a:active{
+            color: aqua;
+        }
+
+        a:hover{
+            background-color: rgba(255, 0, 0, 0.169);
+            padding: 8px;
+            color: black;
+            font-size: 24px;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 8px;
+        }
+
+        #mydiv{
+            background-color: rgba(42, 112, 42, 0.358);
+            color: white;
+            display: none;
+        }
+
+        #linkdiv:hover #mydiv{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        selector:pseudo_class_name{
+            property1 : value1;
+            property2 : value2;
+            ...
+            propertyN : valueN;
+        }
+    </pre>
+    <div id="linkdiv">
+        <a href="https://sscresult.mahahsscboard.in/">SSC Results</a>
+        <a href="https://mahahsscboard.in/en">Maharashtra Board</a>
+        <a href="https://mahahsscboard.in/hn">Maharashtra Board</a>
+        <a href="https://netflix.com">Netflix</a>
+
+        <div id="mydiv">Important Links</div>
+    </div>
+    
+    
+</body>
+</html>

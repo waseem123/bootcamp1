@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div{
+            width: 50%;
+            background-color: cadetblue;
+            margin: 16px;
+            padding: 16px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        div>h1{
+            color: white;
+            text-align: center;
+        }
+        div>input[type='text']{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+        }
+        div>button{
+            padding: 8px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+        }
+
+        #output{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 24px;
+            color: white;
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Arithmetic Operations</h1>
+        <input type="text" id="input1">
+        <input type="text" id="input2">
+        <br>
+        <p id="output"></p>
+        <button id="btn_add" onclick="add()">Add</button>
+        <button id="btn_subtract" onclick="subtract()">Subtract</button>
+        <button id="btn_multiply" onclick="multiply()">Multiply</button>
+        <button id="btn_divide" onclick="divide()">Divide</button>
+        
+    </div>
+</body>
+<script>
+    var input1 = document.getElementById('input1')
+    var input2 = document.getElementById('input2')
+    var output = document.getElementById('output')
+    console.log(input1)
+    console.log(input2)
+
+function add(){
+    var result = parseInt(input1.value) + parseInt(input2.value)
+    output.innerHTML = result
+    console.log(result)
+}
+
+function subtract(){
+    var result = parseInt(input1.value) - parseInt(input2.value)
+    output.innerHTML = result
+    console.log(result)
+}
+
+function multiply(){
+    var result = parseInt(input1.value) * parseInt(input2.value)
+    output.innerHTML = result
+    console.log(result)
+}
+
+function divide(){
+    var result = parseInt(input1.value) / parseInt(input2.value)
+    output.innerHTML = result
+    console.log(result)
+}
+</script>
+</html>

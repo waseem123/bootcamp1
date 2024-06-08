@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes myanimation {
+            0%{
+                transform: translate(0px);
+            }
+            50%{
+                background-color: blue;
+                transform: translate(800px);
+            }
+            95%{
+                border-radius: 50%;
+                transform: translate(0px) rotate(-360deg);
+            }
+            100%{
+                border-radius: 100%;
+            }
+        }
+        div{
+            background-color: blueviolet;
+            width: 70px;
+            height: 70px;
+            border-radius: 8px;
+            margin-top: 20%;
+            animation-name: myanimation;
+            animation-duration: 5s;
+            /* animation-direction: alternate; */
+            /* animation-iteration-coun t: infinite; */
+            animation-delay: 5s;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 24px;
+            animation-timing-function: linear;
+            animation-fill-mode: backw ards;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">CSS</div>
+</body>
+</html>
